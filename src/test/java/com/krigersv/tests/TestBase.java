@@ -16,7 +16,6 @@ import java.util.Map;
 
 
 public class TestBase {
-    GeneratorTest random = new GeneratorTest();
 
     @BeforeAll
     static void beforeAll() {
@@ -29,9 +28,10 @@ public class TestBase {
         value.put("enableVNC", true);
         value.put("enableVideo", true);
         capabilities.setCapability("selenoid:options", value);
-
         Configuration.browserCapabilities = capabilities;
+
     }
+        GeneratorTest random = new GeneratorTest();
 
     @BeforeEach
     void beforeEach() {
