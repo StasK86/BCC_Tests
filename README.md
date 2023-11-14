@@ -52,7 +52,7 @@
    - :heavy_check_mark:_Проверка изменения расчёта калькулятора при нажатии на чекбокс_
 5. [Раздел "Депозиты"](https://github.com/StasK86/BCC_Tests/blob/master/src/test/java/com/krigersv/tests/DepositBccTest.java)
    - :heavy_check_mark:_Проверка заполнения заявки на Депозит “Чемпион”_
-6. [Раздел "FX-обменник"](https://github.com/StasK86/BCC_Tests/blob/master/src/test/java/com/krigersv/tests/DepositBccTest.java)
+6. [Раздел "FX-обменник"](https://github.com/StasK86/BCC_Tests/blob/master/src/test/java/com/krigersv/tests/ExchangerBccTest.java)
    - :heavy_check_mark:_Проверка элементов 'Какие возможности вам дает FX-обменник?'_
    - :heavy_check_mark:_Проверка заполнения поля 'Получить консультацию'_
 
@@ -89,7 +89,8 @@ ${TASK}
 -Dbrowser=${BROWSER}
 -DbrowserSize=${BROWSER_SIZE}
 -DbrowserVersion=${BROWSER_VERSION}
--DselenoidUrl=${SELENOID_URL}
+-DbaseUrl=${BASE_URL}
+-DremoteUrl=${REMOTE_URL}
 ```
 
 ---
