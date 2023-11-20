@@ -19,7 +19,7 @@ import org.junit.jupiter.api.Test;
         @DisplayName("Проверка элементов 'Какие возможности вам дает FX-обменник?'")
         @Severity(SeverityLevel.NORMAL)
         @Link(value = "bcc", url = "https://www.bcc.kz/personal/savings/fx-exchange/")
-        void checkingElements() {
+        void checkingElementsTest() {
             Allure.step("Открытие раздела 'FX-обменник'", () ->
                     exchangerBccPage.openPage());
             Allure.step("Проверка отображения преимуществ онлайн площадки для обмена валюты ", () ->
@@ -30,7 +30,7 @@ import org.junit.jupiter.api.Test;
         @DisplayName("Проверка заполнения поля 'Получить консультацию'")
         @Severity(SeverityLevel.NORMAL)
         @Link(value = "bcc", url = "https://www.bcc.kz/personal/savings/fx-exchange/")
-        void checkingTheFilling() {
+        void checkingTheFillingTest() {
             Allure.step("Открытие раздела 'FX-обменник'", () ->
                     exchangerBccPage.openPage());
             Allure.step("Ввод в поле 'ФИО' через генератор случайных фамилии, и имени", () ->
