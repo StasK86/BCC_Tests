@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
     @DisplayName("Проверка элементов на главной странице")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "bcc", url = "https://www.bcc.kz/")
-    void checkListElements() {
+    void checkListElementsTest() {
         Allure.step("Открытие страницы сайта", () ->
                 homeBccPage.openPage());
         Allure.step("Проверка элементов", () ->
