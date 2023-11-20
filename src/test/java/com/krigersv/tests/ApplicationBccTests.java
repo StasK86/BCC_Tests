@@ -17,7 +17,7 @@ public class ApplicationBccTests extends TestBase {
     @DisplayName("Проверка заполнения поля 'Оставьте заявку на кредит' при выборе значения из списка")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "bcc", url = "https://www.bcc.kz/")
-    void checkLoanApplication() {
+    void checkLoanApplicationTest() {
         Allure.step("Открытие страницы", () ->
                 applicationBccPage.openPage());
         Allure.step("Клик на поле с выпадающим списком 'Выберите филиал'", () ->
@@ -43,7 +43,7 @@ public class ApplicationBccTests extends TestBase {
     @DisplayName("Проверка элементов наличия преимуществ")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "bcc", url = "https://m.bcc.kz/")
-    void checkingTheSteps() {
+    void checkingTheStepsTest() {
         Allure.step("Открытие страницы раздела 'Оставьте заявку на кредит'", () ->
                 applicationBccPage.openPage());
         Allure.step("Проверка отображения преимуществ  кредитования в банке 'BCC' ", () ->
