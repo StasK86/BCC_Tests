@@ -94,7 +94,7 @@ ${TASK}
 ```
 
 ---
-## <img src="psv/pictures/Allure_Report.svg" width="50" height="50"/> [Allure](http://192.168.31.186:59047/index.html#) отчет
+## <img src="psv/pictures/Allure_Report.svg" width="50" height="50"/> [Allure](https://jenkins.autotests.cloud/job/BCC_Tests_jenkins/10/allure/) отчет
 
 ### Главная страница отчета
 
