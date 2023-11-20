@@ -19,7 +19,7 @@ public class MortgageBccTest extends TestBase {
         @DisplayName("Проверка изменения расчёта калькулятора при нажатии на чекбокс")
         @Severity(SeverityLevel.NORMAL)
         @Link(value = "bcc", url = "https://m.bcc.kz/mges")
-        void checkMortgageSection() {
+        void checkMortgageSectionTest() {
             Allure.step("Открытие раздела 'Онлайн ипотека на вторичное жильё'", () ->
                     mortgageBccPage.openPage());
             Allure.step("Клик по чекбоксу 'Без пенсионных отчислений'", () ->
