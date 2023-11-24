@@ -17,10 +17,12 @@ public class MortgageBccPage {
         open("https://m.bcc.kz/mges");
         return this;
     }
+
     public MortgageBccPage click() {
         checkboxClick.click();
         return this;
     }
+
     public MortgageBccPage checkResult() {
         result.$(byText(""))
                 .shouldNot(exist);

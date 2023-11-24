@@ -1,4 +1,5 @@
 package com.krigersv.tests;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -17,6 +18,8 @@ import java.util.Map;
 
 public class TestBase {
 
+    GeneratorTest random = new GeneratorTest();
+
     @BeforeAll
     static void beforeAll() {
         WebProvider.config();
@@ -31,7 +34,6 @@ public class TestBase {
         Configuration.browserCapabilities = capabilities;
 
     }
-        GeneratorTest random = new GeneratorTest();
 
     @BeforeEach
     void beforeEach() {

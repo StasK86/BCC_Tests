@@ -42,7 +42,9 @@ public class ApplicationBccPage {
     public ApplicationBccPage checkSection(List<String> steps) {
         for (String step : steps) {
             footfall.findBy(text(step)).shouldBe(visible);
-        }return this;}
+        }
+        return this;
+    }
 
     public ApplicationBccPage choiceIIN(String value) {
         formInput.setValue(value);

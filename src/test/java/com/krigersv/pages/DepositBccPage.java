@@ -24,10 +24,12 @@ public class DepositBccPage {
         open("personal/deposits/champion/");
         return this;
     }
+
     public DepositBccPage click() {
         control.click();
         return this;
     }
+
     public DepositBccPage choose(String value) {
         searchInput.$(byText(value)).click();
         return this;
@@ -37,10 +39,12 @@ public class DepositBccPage {
         iinBin.setValue(value);
         return this;
     }
+
     public DepositBccPage choiceName(String value) {
         name.setValue(value);
         return this;
     }
+
     public DepositBccPage choicePhones(String value) {
         phone.setValue(value);
         return this;
@@ -50,6 +54,7 @@ public class DepositBccPage {
         checkbox.click();
         return this;
     }
+
     public DepositBccPage clickButton() {
         pressButton.click();
         return this;

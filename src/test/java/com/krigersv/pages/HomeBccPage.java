@@ -20,9 +20,11 @@ public class HomeBccPage {
         return this;
 
     }
+
     public HomeBccPage checkMenuPanelExist(List<String> menu) {
         for (String section : menu) {
-            menuPanel.findBy(text(section)).should(exist);}
+            menuPanel.findBy(text(section)).should(exist);
+        }
         return this;
     }
 }

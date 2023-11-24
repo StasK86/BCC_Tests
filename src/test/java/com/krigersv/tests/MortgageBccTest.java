@@ -13,18 +13,18 @@ import org.junit.jupiter.api.Test;
 
 public class MortgageBccTest extends TestBase {
 
-        MortgageBccPage mortgageBccPage = new MortgageBccPage();
+    MortgageBccPage mortgageBccPage = new MortgageBccPage();
 
-        @Test
-        @DisplayName("Проверка изменения расчёта калькулятора при нажатии на чекбокс")
-        @Severity(SeverityLevel.NORMAL)
-        @Link(value = "bcc", url = "https://m.bcc.kz/mges")
-        void checkMortgageSectionTest() {
-            Allure.step("Открытие раздела 'Онлайн ипотека на вторичное жильё'", () ->
-                    mortgageBccPage.openPage());
-            Allure.step("Клик по чекбоксу 'Без пенсионных отчислений'", () ->
-                    mortgageBccPage.click());
-            Allure.step("Проверка, что расчёт калькулятора изменилися", () ->
-                    mortgageBccPage.checkResult());
-        }
+    @Test
+    @DisplayName("Проверка изменения расчёта калькулятора при нажатии на чекбокс")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(value = "bcc", url = "https://m.bcc.kz/mges")
+    void checkMortgageSectionTest() {
+        Allure.step("Открытие раздела 'Онлайн ипотека на вторичное жильё'", () ->
+                mortgageBccPage.openPage());
+        Allure.step("Клик по чекбоксу 'Без пенсионных отчислений'", () ->
+                mortgageBccPage.click());
+        Allure.step("Проверка, что расчёт калькулятора изменилися", () ->
+                mortgageBccPage.checkResult());
+    }
 }
