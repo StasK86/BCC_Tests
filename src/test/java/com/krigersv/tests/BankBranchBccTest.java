@@ -17,19 +17,19 @@ public class BankBranchBccTest extends TestBase {
     @DisplayName("Проверка подсказок в поисковой строке")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "bcc", url = "https://www.bcc.kz/")
-    void checkHints() {
+    void checkHintsTest() {
         Allure.step("Открытие раздела 'Отделения и банкоматы'", () ->
                 bankBranchBccPage.openPage());
         Allure.step("Закрытие окна 'Введите название региона'", () ->
-                bankBranchBccPage.closingWindow());
+                bankBranchBccPage.closeWindow());
         Allure.step("Клик на поле 'Выбор региона'", () ->
-                bankBranchBccPage.click());
+                bankBranchBccPage.chooseRegion());
         Allure.step("Выбор из списка", () ->
-                bankBranchBccPage.choice(random.city));
+                bankBranchBccPage.chooseList(random.city));
         Allure.step("Клик по поисковой строке 'Введите адрес'", () ->
-                bankBranchBccPage.typeText(random.insertion));
+                bankBranchBccPage.searchText(random.insertion));
         Allure.step("Проверка", () ->
-                bankBranchBccPage.checkTipsExist());
+                bankBranchBccPage.check());
     }
 }
 

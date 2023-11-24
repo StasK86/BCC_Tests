@@ -16,7 +16,7 @@ public class ExchangerBccPage {
             searchName = $("[name='name']"),
             phones = $("[name='phone']"),
             pressCheckbox = $("[class='btn-checkbox']"),
-            clickButton = $("[type='submit']"),
+            buttonClick = $("[type='submit']"),
             result = $("[id='genericForm_forms_flash']");
 
     private final ElementsCollection pace = $$("[class='container constructor-blocks']");
@@ -35,17 +35,17 @@ public class ExchangerBccPage {
     }
 
 
-    public ExchangerBccPage iinBin(String value) {
+    public ExchangerBccPage choiceIIN(String value) {
         formInput.setValue(value);
         return this;
     }
 
-    public ExchangerBccPage name(String value) {
+    public ExchangerBccPage choiceName(String value) {
         searchName.setValue(value);
         return this;
     }
 
-    public ExchangerBccPage phones(String value) {
+    public ExchangerBccPage choicePhones(String value) {
         phones.setValue(value);
         return this;
     }
@@ -55,8 +55,8 @@ public class ExchangerBccPage {
         return this;
     }
 
-    public ExchangerBccPage buttonClick() {
-        clickButton.click();
+    public ExchangerBccPage clickButton() {
+        buttonClick.click();
         return this;
     }
 

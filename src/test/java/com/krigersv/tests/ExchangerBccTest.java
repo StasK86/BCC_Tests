@@ -34,15 +34,15 @@ import org.junit.jupiter.api.Test;
             Allure.step("Открытие раздела 'FX-обменник'", () ->
                     exchangerBccPage.openPage());
             Allure.step("Ввод в поле 'ФИО' через генератор случайных фамилии, и имени", () ->
-                    exchangerBccPage.name(random.name));
+                    exchangerBccPage.choiceName(random.name));
             Allure.step("Ввод в поле 'ИИН' через генератор случайных чисел", () ->
-                    exchangerBccPage.iinBin(random.bank));
+                    exchangerBccPage.choiceIIN(random.bank));
             Allure.step("Ввод в поле 'Номер телефона' через генератор случайных чисел", () ->
-                    exchangerBccPage.phones(random.number));
+                    exchangerBccPage.choicePhones(random.number));
             Allure.step("Клик по чекбоксу 'Я согласен на сбор и обработку персональных данных'", () ->
                     exchangerBccPage.checkboxLabel());
             Allure.step("Клик по кнопке 'Подать заявку'", () ->
-                    exchangerBccPage.buttonClick());
+                    exchangerBccPage.clickButton());
             Allure.step("Проверка", () ->
                     exchangerBccPage.checkResult());
     }

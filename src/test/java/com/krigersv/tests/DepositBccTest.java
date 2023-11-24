@@ -17,23 +17,23 @@ public class DepositBccTest extends TestBase {
     @DisplayName("Проверка заполнения заявки на Депозит “Чемпион”")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "bcc", url = "https://www.bcc.kz/personal/deposits/champion/")
-    void checkApplications() {
+    void checkApplicationsTest() {
         Allure.step("Открытие раздела 'Депозит Чемпион'", () ->
                 depositBccPage.openPage());
         Allure.step("Клик на поле 'Выберите филиал'", () ->
                 depositBccPage.click());
         Allure.step("Выбор из списка", () ->
-                depositBccPage.listBox(random.enteringTasks));
+                depositBccPage.choose(random.enteringTasks));
         Allure.step("Ввод в поле 'ИИН' через генератор случайных чисел", () ->
-                depositBccPage.typeText(random.bank));
+                depositBccPage.choiceIIN(random.bank));
         Allure.step("Ввод в поле 'ФИО' через генератор случайных фамилии, и имени", () ->
-                depositBccPage.type(random.name));
+                depositBccPage.choiceName(random.name));
         Allure.step("Ввод в поле 'Номер телефона' через генератор случайных чисел", () ->
-                depositBccPage.phone(random.number));
+                depositBccPage.choicePhones(random.number));
         Allure.step("Клик по чекбоксу 'Я согласен на сбор и обработку персональных данных'", () ->
-                depositBccPage.label());
+                depositBccPage.agree());
         Allure.step("Клик по кнопке 'Подать заявку'", () ->
-                depositBccPage.button());
+                depositBccPage.clickButton());
         Allure.step("Проверка", () ->
                 depositBccPage.check());
     }

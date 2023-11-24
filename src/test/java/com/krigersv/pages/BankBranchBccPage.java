@@ -22,25 +22,25 @@ public class BankBranchBccPage {
         return this;
 
     }
-    public BankBranchBccPage closingWindow() {
+    public BankBranchBccPage closeWindow() {
         closing.click();
         return this;
     }
-    public BankBranchBccPage click() {
+    public BankBranchBccPage chooseRegion() {
         selection.click();
         return this;
     }
-    public BankBranchBccPage choice(String value) {
+    public BankBranchBccPage chooseList(String value) {
         list.$(byText(value)).click();
         return this;
 }
 
-    public BankBranchBccPage typeText(String value) {
+    public BankBranchBccPage searchText(String value) {
         searchInput.setValue(value);
         return this;
     }
 
-    public BankBranchBccPage checkTipsExist() {
+    public BankBranchBccPage check() {
         completeResult.shouldBe(visible);
         return this;
     }

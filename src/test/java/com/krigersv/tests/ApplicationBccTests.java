@@ -23,17 +23,17 @@ public class ApplicationBccTests extends TestBase {
         Allure.step("Клик на поле с выпадающим списком 'Выберите филиал'", () ->
                 applicationBccPage.clickCity());
         Allure.step("Выбор филиала из списка", () ->
-                applicationBccPage.choice(random.enteringTasks));
+                applicationBccPage.chooseBranch(random.enteringTasks));
         Allure.step("Ввод в поле 'ИИН' через генератор случайных чисел", () ->
-                applicationBccPage.iinBin(random.bank));
+                applicationBccPage.choiceIIN(random.bank));
         Allure.step("Ввод в поле 'ФИО' через генератор случайных фамилии, и имени", () ->
-                applicationBccPage.name(random.name));
+                applicationBccPage.choiceName(random.name));
         Allure.step("Ввод в поле 'Номер телефона' через генератор случайных чисел", () ->
-                applicationBccPage.phones(random.number));
+                applicationBccPage.choicePhones(random.number));
         Allure.step("Клик по чекбоксу 'Я согласен на сбор и обработку персональных данных'", () ->
-                applicationBccPage.checkboxLabel());
+                applicationBccPage.checkCheckbox());
         Allure.step("Клик по кнопке 'Подать заявку'", () ->
-                applicationBccPage.buttonClick());
+                applicationBccPage.clickButton());
         Allure.step("Проверка", () ->
                 applicationBccPage.checkResult());
 

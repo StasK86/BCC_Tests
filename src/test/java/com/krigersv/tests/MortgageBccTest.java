@@ -25,6 +25,6 @@ public class MortgageBccTest extends TestBase {
             Allure.step("Клик по чекбоксу 'Без пенсионных отчислений'", () ->
                     mortgageBccPage.click());
             Allure.step("Проверка, что расчёт калькулятора изменилися", () ->
-                    mortgageBccPage.resultCheck());
+                    mortgageBccPage.checkResult());
         }
 }

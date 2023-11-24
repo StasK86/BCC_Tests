@@ -34,7 +34,7 @@ public class ApplicationBccPage {
         return this;
     }
 
-    public ApplicationBccPage choice(String value) {
+    public ApplicationBccPage chooseBranch(String value) {
         listSelection.$(byText(value)).click();
         return this;
     }
@@ -44,27 +44,27 @@ public class ApplicationBccPage {
             footfall.findBy(text(step)).shouldBe(visible);
         }return this;}
 
-    public ApplicationBccPage iinBin(String value) {
+    public ApplicationBccPage choiceIIN(String value) {
         formInput.setValue(value);
         return this;
     }
 
-    public ApplicationBccPage name(String value) {
+    public ApplicationBccPage choiceName(String value) {
         searchName.setValue(value);
         return this;
     }
 
-    public ApplicationBccPage phones(String value) {
+    public ApplicationBccPage choicePhones(String value) {
         phones.setValue(value);
         return this;
     }
 
-    public ApplicationBccPage checkboxLabel() {
+    public ApplicationBccPage checkCheckbox() {
         pressCheckbox.click();
         return this;
     }
 
-    public ApplicationBccPage buttonClick() {
+    public ApplicationBccPage clickButton() {
         clickButton.click();
         return this;
     }

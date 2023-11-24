@@ -10,10 +10,10 @@ import static com.codeborne.selenide.Selenide.open;
 public class DepositBccPage {
     private final SelenideElement
 
-            selection1 = $("[class='form-control']"),
+            control = $("[class='form-control']"),
             searchInput = $("[role='listbox']"),
-            searchInput2 = $("[name='iinBin']"),
-            searchInput3 = $("[name='name']"),
+            iinBin = $("[name='iinBin']"),
+            name = $("[name='name']"),
             phone = $("[name='phone']"),
             checkbox = $("[class='btn-checkbox']"),
             pressButton = $("[type='submit']"),
@@ -25,32 +25,32 @@ public class DepositBccPage {
         return this;
     }
     public DepositBccPage click() {
-        selection1.click();
+        control.click();
         return this;
     }
-    public DepositBccPage listBox(String value) {
+    public DepositBccPage choose(String value) {
         searchInput.$(byText(value)).click();
         return this;
     }
 
-    public DepositBccPage typeText(String value) {
-        searchInput2.setValue(value);
+    public DepositBccPage choiceIIN(String value) {
+        iinBin.setValue(value);
         return this;
     }
-    public DepositBccPage type(String value) {
-        searchInput3.setValue(value);
+    public DepositBccPage choiceName(String value) {
+        name.setValue(value);
         return this;
     }
-    public DepositBccPage phone(String value) {
+    public DepositBccPage choicePhones(String value) {
         phone.setValue(value);
         return this;
     }
 
-    public DepositBccPage label() {
+    public DepositBccPage agree() {
         checkbox.click();
         return this;
     }
-    public DepositBccPage button() {
+    public DepositBccPage clickButton() {
         pressButton.click();
         return this;
     }

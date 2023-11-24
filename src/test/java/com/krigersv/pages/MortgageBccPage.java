@@ -11,7 +11,7 @@ public class MortgageBccPage {
 
     private final SelenideElement
             checkboxClick = $("[class='sb-checkbox sb-checkbox-digital-mortgage']"),
-            Result = $("[class='digital-mortgage-txts8']");
+            result = $("[class='digital-mortgage-txts8']");
 
     public MortgageBccPage openPage() {
         open("https://m.bcc.kz/mges");
@@ -21,8 +21,8 @@ public class MortgageBccPage {
         checkboxClick.click();
         return this;
     }
-    public MortgageBccPage resultCheck() {
-        Result.$(byText(""))
+    public MortgageBccPage checkResult() {
+        result.$(byText(""))
                 .shouldNot(exist);
         return this;
     }
