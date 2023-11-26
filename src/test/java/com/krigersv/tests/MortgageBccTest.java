@@ -23,7 +23,7 @@ public class MortgageBccTest extends TestBase {
         Allure.step("Открытие раздела 'Онлайн ипотека на вторичное жильё'", () ->
                 mortgageBccPage.openPage());
         Allure.step("Клик по чекбоксу 'Без пенсионных отчислений'", () ->
-                mortgageBccPage.click());
+                mortgageBccPage.clickCheckbox());
         Allure.step("Проверка, что расчёт калькулятора изменилися", () ->
                 mortgageBccPage.checkResult());
     }

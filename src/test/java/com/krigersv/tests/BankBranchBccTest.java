@@ -29,7 +29,7 @@ public class BankBranchBccTest extends TestBase {
         Allure.step("Клик по поисковой строке 'Введите адрес'", () ->
                 bankBranchBccPage.searchText(random.insertion));
         Allure.step("Проверка", () ->
-                bankBranchBccPage.check());
+                bankBranchBccPage.checkResult());
     }
 }
 

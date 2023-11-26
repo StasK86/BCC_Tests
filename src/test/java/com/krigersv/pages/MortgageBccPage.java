@@ -18,7 +18,7 @@ public class MortgageBccPage {
         return this;
     }
 
-    public MortgageBccPage click() {
+    public MortgageBccPage clickCheckbox() {
         checkboxClick.click();
         return this;
     }

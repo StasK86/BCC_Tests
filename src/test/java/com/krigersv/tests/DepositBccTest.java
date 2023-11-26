@@ -21,9 +21,9 @@ public class DepositBccTest extends TestBase {
         Allure.step("Открытие раздела 'Депозит Чемпион'", () ->
                 depositBccPage.openPage());
         Allure.step("Клик на поле 'Выберите филиал'", () ->
-                depositBccPage.click());
+                depositBccPage.clickOnTheField());
         Allure.step("Выбор из списка", () ->
-                depositBccPage.choose(random.enteringTasks));
+                depositBccPage.chooseFromList(random.enteringTasks));
         Allure.step("Ввод в поле 'ИИН' через генератор случайных чисел", () ->
                 depositBccPage.choiceIIN(random.bank));
         Allure.step("Ввод в поле 'ФИО' через генератор случайных фамилии, и имени", () ->
@@ -31,10 +31,10 @@ public class DepositBccTest extends TestBase {
         Allure.step("Ввод в поле 'Номер телефона' через генератор случайных чисел", () ->
                 depositBccPage.choicePhones(random.number));
         Allure.step("Клик по чекбоксу 'Я согласен на сбор и обработку персональных данных'", () ->
-                depositBccPage.agree());
+                depositBccPage.agreeToProcessing());
         Allure.step("Клик по кнопке 'Подать заявку'", () ->
                 depositBccPage.clickButton());
         Allure.step("Проверка", () ->
-                depositBccPage.check());
+                depositBccPage.checkTheResult());
     }
 }

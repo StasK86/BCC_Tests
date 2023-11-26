@@ -43,7 +43,7 @@ public class BankBranchBccPage {
         return this;
     }
 
-    public BankBranchBccPage check() {
+    public BankBranchBccPage checkResult() {
         completeResult.shouldBe(visible);
         return this;
     }

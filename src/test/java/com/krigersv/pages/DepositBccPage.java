@@ -25,12 +25,12 @@ public class DepositBccPage {
         return this;
     }
 
-    public DepositBccPage click() {
+    public DepositBccPage clickOnTheField() {
         control.click();
         return this;
     }
 
-    public DepositBccPage choose(String value) {
+    public DepositBccPage chooseFromList(String value) {
         searchInput.$(byText(value)).click();
         return this;
     }
@@ -50,7 +50,7 @@ public class DepositBccPage {
         return this;
     }
 
-    public DepositBccPage agree() {
+    public DepositBccPage agreeToProcessing() {
         checkbox.click();
         return this;
     }
@@ -60,7 +60,7 @@ public class DepositBccPage {
         return this;
     }
 
-    public DepositBccPage check() {
+    public DepositBccPage checkTheResult() {
         resultComplete.shouldBe(visible);
         return this;
     }
